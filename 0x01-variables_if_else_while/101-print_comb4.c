@@ -6,27 +6,31 @@
 */
 int main(void)
 {
-int i = 0;
 int r;
-int l;
 int c;
-int x;
-while (i < 999)
+int l;
+for (r = '0'; r <= '9'; r++)
 {
-r = (i / 100 + '0');
-l = (i % 10 + '0');
-c = (i / 10 % 10 + '0');
-if (l < c && c < r)
+for (c = '0'; c <= '9'; c++)
 {
-putchar(l);
-putchar(c);
+for (l = '0'; l <= '9'; l++)
+{
+if (r < c && c < l)
+{
 putchar(r);
-if (i <= 788)
+putchar(c);
+putchar(l);
+if (r == '7' && c == '8' && l == '9')
+{
+putchar('\n');
+}
+else
 {
 putchar(',');
 putchar(' ');
 }
 }
-i++;
+}
+}
 }
 }
