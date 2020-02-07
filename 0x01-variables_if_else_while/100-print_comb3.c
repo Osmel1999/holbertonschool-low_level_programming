@@ -9,7 +9,7 @@ int main(void)
 int i = 0;
 int r;
 int l;
-while (i <= 99)
+while (i < 99)
 {
 r = (i / 10 + '0');
 l = (i % 10 + '0');
@@ -17,7 +17,7 @@ if (r < l)
 {
 putchar(r);
 putchar(l);
-if (i != 99)
+if (i != 89)
 {
 putchar(',');
 putchar(' ');
