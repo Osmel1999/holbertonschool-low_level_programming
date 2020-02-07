@@ -21,7 +21,7 @@ if (l < c && c < r)
 putchar(l);
 putchar(c);
 putchar(r);
-if (i != 789)
+if (i <= 788)
 {
 putchar(',');
 putchar(' ');
