@@ -13,9 +13,11 @@ if (a >= 0)
 {
 b = a % 10;
 _putchar(b + '0');
+_putchar('\n');
 return (b);
 }
 b = -a % 10;
 _putchar(b + '0');
+_putchar('\n');
 return (b);
 }
