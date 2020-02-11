@@ -1,6 +1,4 @@
 #include "holberton.h"
-#include "holberton.h"
-
 /**
  * print_last_digit - check the code for Holberton School students.
  * @a: variable of the pararmeter
@@ -13,11 +11,9 @@ if (a >= 0)
 {
 b = a % 10;
 _putchar(b + '0');
-_putchar('\n');
 return (b);
 }
 b = -a % 10;
 _putchar(b + '0');
-_putchar('\n');
 return (b);
 }
