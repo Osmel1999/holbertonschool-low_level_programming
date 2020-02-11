@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
+ *  pritn_alphabet - check the code for Holberton School students.
  *
  * Return: None, 'cause the return of the function is void.
  */
