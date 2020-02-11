@@ -1,20 +1,19 @@
 #include "holberton.h"
+#include <string.h>
 /**
- * main - check the code for Holberton School students.
+ * main - Entry point
  *
- * Return: Always 0.
+ * Return:  Always 0 (Success)
  */
 int main(void)
 {
-_putchar('H');
-_putchar('o');
-_putchar('l');
-_putchar('b');
-_putchar('e');
-_putchar('r');
-_putchar('t');
-_putchar('o');
-_putchar('n');
-_putchar('\n');
+char *text;
+int i;
+text = "Holberton\n";
+for (i = 0; i <= 9; i++)
+{
+_putchar(text[i]);
+}
 return (0);
 }
+© 2020 GitHub, Inc.
