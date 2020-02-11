@@ -14,9 +14,10 @@ while (r < 60)
 {
 _putchar(l / 10 + '0');
 _putchar(l % 10 + '0');
-_putchar('\n');
+_putchar(':');
 _putchar(r / 10 + '0');
 _putchar(r % 10 + '0');
+_putchar('\n');
 r++;
 }
 l++;
