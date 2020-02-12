@@ -1,6 +1,7 @@
 include "holberton.h"
 /**
- * main - this function print the int positive and once that are  * negative 
+ * main -tests function that prints if integer is positive or negative 
+ * 
  * Return: 0
  */
 int main(void)
