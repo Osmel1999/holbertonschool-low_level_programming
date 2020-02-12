@@ -1,78 +1,30 @@
-#include "holberton.h"
 #include <stdio.h>
+#include "holberton.h"
 /**
- * print_to_98 
+ * print_to_98 - prints all natural numbers from n to 98,
+ * 
  * @n: variable of the function
- * Result: none, is void
  */
 void print_to_98(int n)
 {
-if (n <= -10)
+int i, j;
+if (n <= 98)
 {
-n = n * -1;
-_putchar('-');
-printf("%d", n);
-}
-else
+for (i = n; i <= 98; i++)
 {
-n = n * -1;
-_putchar('-');
-printf("%d", n);
+if (i != 98)
+printf("%d, ", i);
+else if (i == 98)
+printf("%d\n", i);
 }
-}
-/**
- * print_to_98_2
- * @n: Number to print
- * Return: none, is void
- */
-void print_to_98_2(int n)
+} else if (n >= 98)
 {
-if (n >= 100)
+for (j = n; j >= 98; j--)
 {
-printf("%d", n);
-}
-else if (n >= 10)
-{
-printf("%d", n);
-}
-else if (n >= 0)
-{
-printf("%d", n);
-}
-else
-{
-print_to_98(n);
-}
-}
-/**
- * print_to_98_3
- * @n: Number n
- * Return: Return the nothing
- */
-void print_to_98_3(int n)
-{
-while (1)
-{
-if (n != 98)
-{
-print_to_98_2(n);
-_putchar(',');
-_putchar(' ');
-}
-if (n == 98)
-{
-print_number(n);
-_putchar('\n');
-break;
-}
-else if (n > 98)
-{
-n--;
-}
-else
-{
-n++;
+if (j != 98)
+printf("%d, ", j);
+else if (j == 98)
+printf("%d\n", j);
 }
 }
 }
-
