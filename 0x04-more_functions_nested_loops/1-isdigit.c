@@ -3,7 +3,7 @@
 /**
  * _isdigit - check the code for Holberton School students.
  * @c: variable of the function.
- * Return: 1 when c is a digit and 0 when isn't. 
+ * Return: 1 when c is a digit and 0 when isn't.
  */
 int _isdigit(int c)
 {
