@@ -1,30 +1,36 @@
 #include "holberton.h"
-
+#include <stdio.h>
 /**
- * print_triangle - check the code for Holberton School students.
- * @size: variable of the function.
+ * main - check the code for Holberton School students.
+ *
+ * Return: 0.
  */
-void print_triangle(int size)
+int main(void)
 {
-if (size <= 0)
+int a;
+for (a = 1; a <= 100; a++)
 {
-_putchar('\n');
+if (a % 3 == 0 && a % 5 != 0)
+{
+printf(" Fizz");
+}
+else if (a % 5 == 0 && a % 3 != 0)
+{
+printf(" Buzz");
+}
+else if (a % 3 == 0 && a % 5 == 0)
+{
+printf(" FizzBuzz");
+}
+else if (a == 1)
+{
+printf("%d", a);
 }
 else
 {
-int a;
-int b;
-for (a = 1; a <= size; a++)
-{
-for (b = a; b < size; b++)
-{
-_putchar(' ');
-}
-for (b = 1; b <= a; b++)
-{
-_putchar('#');
-}
-_putchar('\n');
+printf(" %d", a);
 }
 }
+printf("\n");
+return (0);
 }
