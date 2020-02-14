@@ -1,14 +1,30 @@
-#include <stdio.h>
 #include "holberton.h"
-/**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
- */
-int main(void)
-{
-int c; 
 
-for (c = 1; c <= 100; c++)
-	printf("%d", c);
+/**
+ * print_triangle - check the code for Holberton School students.
+ * @size: variable of the function.
+ */
+void print_triangle(int size)
+{
+if (size <= 0)
+{
+_putchar('\n');
+}
+else
+{
+int a;
+int b;
+for (a = 1; a <= size; a++)
+{
+for (b = a; b < size; b++)
+{
+_putchar(' ');
+}
+for (b = 1; b <= a; b++)
+{
+_putchar('#');
+}
+_putchar('\n');
+}
+}
 }
