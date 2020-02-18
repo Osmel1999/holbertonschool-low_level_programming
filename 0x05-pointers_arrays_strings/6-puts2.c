@@ -7,13 +7,15 @@
 void puts2(char *str)
 {
 int c;
+char p;
+
 for (c = 0; str[c] != '\0'; c++)
 {
-if (c == 0 || c == 2 || c == 4 || c == 6 || c == 8)
+if (c % 2  == 0)
 {
-_putchar(c + '0');
+p = str[c];
+_putchar (p);
 }
 }
 _putchar('\n');
-c++;
 }
