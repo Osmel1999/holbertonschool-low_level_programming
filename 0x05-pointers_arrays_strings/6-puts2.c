@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * puts2 - check the code for Holberton School students.
+ * @str: pontier of the fuction.
+ * Return: void
  */
 void puts2(char *str)
 {
