@@ -8,7 +8,7 @@ void puts_half(char *str)
 {
 int c;
 int n;
-for (c = 0; str[c] != '\0'; c++)
+while (str[c] != '\0')
 {
 }
 if (c % 2 == 0)
@@ -17,11 +17,11 @@ n = c / 2;
 }
 else
 {
-n = (c - 1) / 2;
+n = (c + 1) / 2;
 }
-for (; n < c; n++)
+while (n < c)
 {
 _putchar(str[n]);
+n++;
 }
-_putchar('\n');
 }
