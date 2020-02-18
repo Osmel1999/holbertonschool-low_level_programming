@@ -1,6 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
-#include <string.h>
 /**
  * _strlen - check the code for Holberton School students.
  * @s: pontier of the function
@@ -8,5 +6,9 @@
  */
 int _strlen(char *s)
 {
-*s = strlen(&s);
+int c;
+for (c = 0; *s != '\0'; s++)
+{
+c++;
+}
 }
