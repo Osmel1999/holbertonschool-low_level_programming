@@ -1,25 +1,20 @@
 #include "holberton.h"
 #include <stdio.h>
+
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * print_array - Print an array
+ * @a: Array to print
+ * @n: Lenght of the array
  */
 void print_array(int *a, int n)
 {
 int c;
-for (c = 0; c <= n; c++)
+for (c = 0; c < n; c++)
 {
-if (c < n)
-{
+if (c == n - 1)
 printf("%d", a[c]);
-printf(",");
-printf(" ");
-}
 else
-{
-printf("%d", a[c]);
-}
+printf("%d, ", a[c]);
 }
 printf("\n");
 }
