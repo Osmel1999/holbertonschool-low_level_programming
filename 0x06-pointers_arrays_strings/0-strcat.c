@@ -1,32 +1,32 @@
 #include "holberton.h"
 /**
- * *_strcat - check the code for Holberton School students.
- * @dest: pointer of the function.
- * @src: pointer of function.
+ * _strlen - check the code for Holberton School students.
+ * @s: pontier of the function
+ * Return: Always 0.
+ */
+int _strlen(char *s)
+{
+int c;
+for (c = 0; *s != '\0'; s++)
+{
+c++;
+}
+return (c);
+}
+/**
+ * main - check the code for Holberton School students.
+ *
  * Return: Always 0.
  */
 char *_strcat(char *dest, char *src)
 {
-if (dest == NULL)
+int l, c;
+
+l = _streln(dest);
+for (c = 0; src[c] != '\0'; c++, l++)
 {
-return (NULL);
+dest[l] = src[c];
 }
-if (src == dest)
-{
-return (dest);
-}
-char *i = dest;
-while (*i != '\0')
-{
-i++;
-}
-char *e;
-while (*e != '\0')
-{
-*i = *e;
-i++;
-e++;
-}
-*i = '\0';
+dest[l]= '\0';
 return (dest);
 }
