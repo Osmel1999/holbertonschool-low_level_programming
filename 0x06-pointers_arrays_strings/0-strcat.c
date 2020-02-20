@@ -1,32 +1,19 @@
 #include "holberton.h"
 /**
- * _strlen - check the code for Holberton School students.
- * @s: pontier of the function
- * Return: Always 0.
- */
-int _strlen(char *s)
-{
-int c;
-for (c = 0; *s != '\0'; s++)
-{
-c++;
-}
-return (c);
-}
-/**
  * main - check the code for Holberton School students.
  *
  * Return: Always 0.
  */
 char *_strcat(char *dest, char *src)
 {
-int l, c;
+int var_1, var_2;
 
-l = _streln(dest);
-for (c = 0; src[c] != '\0'; c++, l++)
+for (var_1 = 0; dest[var_1] != '\0'; var_1++)
 {
-dest[l] = src[c];
 }
-dest[l]= '\0';
+for (var_2 = 0; src[var_2] != '\0'; var_2++, var_1++)
+{
+dest[var_1] = src[var_2];
+}
 return (dest);
 }
