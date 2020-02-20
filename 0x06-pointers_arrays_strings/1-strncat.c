@@ -1,12 +1,12 @@
 #include "holberton.h"
 /**
- *  *_strcat- check the code for Holberton School students.
+ *  *_strncat- check the code for Holberton School students.
  *  @src: pointer of the function.
  *  @dest: pointer of the function.
  *  @n: variable of the function.
  * Return: Always 0.
  */
-char *_strcat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 int var_1, var_2;
 
