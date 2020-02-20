@@ -1,21 +1,23 @@
 #include "holberton.h"
 /**
- *  *_strncat- check the code for Holberton School students.
+ *  *_strncpy- check the code for Holberton School students.
  *  @src: pointer of the function.
  *  @dest: pointer of the function.
  *  @n: variable of the function.
  * Return: Always 0.
  */
-char *_strncat(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
-int var_1, var_2;
-
-for (var_1 = 0; dest[var_1] != '\0' &&  var_1 < n; var_1++)
+int a = 0;
+while (src[a] != '\0' && a < n)
 {
+dest[a] = src[a];
+a++;
 }
-for (var_2 = 0; src[var_2] != '\0' && var_2 < n; var_2++, var_1++)
+while (a < n)
 {
-dest[var_1] = src[var_2];
+dest[a] = '\0';
+a++;
 }
 return (dest);
 }
