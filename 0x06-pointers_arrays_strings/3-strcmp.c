@@ -1,32 +1,17 @@
 #include "holberton.h"
-#include <stdio.h>
-
 /**
- * _strspn - function
- * @s: pointier of the variable 
- * @accept: pointier of the variable
- * Return: number of bytes;
+ * _strcmp -
+ * @s1:  pointer variable.
+ * @s2:  pointer variable.
+ * Return: comparision of two strings.
  */
-unsigned int _strspn(char *s, char *accept)
+int _strcmp(char *s1, char *s2)
 {
-	unsigned int num;
-	int i;
-  int c;
-  int b;
-	a = 0;
-	while (s[a] != '\0')
-  {
- t = 0;
-for (c = 0; accept[c] != '\0'; c++)
+int a;
+for (a = 0; s1[a] != '\0' || s2[a] != '\0' ; a++)
 {
-if (s[a] == accept[c])
-t = 1;
+if (s1[a] != s2[a])
+return (s1[a] - s2[a]);
 }
-c = 0;
-if (b == 0)
-break;
-num++;
-a++;
-}
-return (a);
+return (0);
 }
