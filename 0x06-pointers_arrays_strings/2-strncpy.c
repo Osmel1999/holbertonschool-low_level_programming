@@ -2,8 +2,9 @@
 /**
  * _strchr - 
  * character c in the string s
- * @c: variable of the function
- * @s: pointer of the function
+ * @dest:pointer
+ * @src: pointer of the function
+ * @n: variable
  * Return: pointer to first occurence of character c or null if not found
  */
 char *_strncpy(char *dest, char *src, int n)
