@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _strcmp -
+ * _strcmp - function
  * @s1:  pointer variable.
  * @s2:  pointer variable.
  * Return: comparision of two strings.
