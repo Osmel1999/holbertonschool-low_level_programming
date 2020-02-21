@@ -1,23 +1,36 @@
 #include "holberton.h"
 /**
- * _strchr - 
- * character c in the string s
- * @dest:pointer
- * @src: pointer of the function
+ * _strlen - Length function
+ * @s: pontier
+ * Return: variable
+ */
+int _strlen(char *s)
+{
+int a;
+for (a = 0; s[a] != '\0'; a++)
+{
+}
+return (a);
+}
+/**
+ * _strncpy - Function
+ * @dest: pointer
+ * @src: pointer
  * @n: variable
- * Return: pointer to first occurence of character c or null if not found
+ * Return: Return dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-int a;
-
-for (a = 0; a < n && src[a] != '\0'; a++)
-{
-dest[a] = src[a];
-}
-for ( ; a < n; a++)
-{
-dest[a] = '\0';
-}
-return (dest);
+	int s;
+  int a;
+	s = _strlen(src);
+	for (a = 0; a < n && a <= s; a++)
+  {
+  dest[a] = src[a];
+  }
+	for (; a < n; a++)
+  {
+  dest[a] = '\0';
+  }
+	return (dest);
 }
