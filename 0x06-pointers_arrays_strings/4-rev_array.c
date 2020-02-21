@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * reverse_array - a function that reverses an array.
+ * reverse_array - a function 
  * @a: pointer.
  * @n: variable.
  * Return: void.
