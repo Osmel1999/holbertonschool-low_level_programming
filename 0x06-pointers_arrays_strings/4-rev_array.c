@@ -1,21 +1,19 @@
 #include "holberton.h"
 /**
- * reverse_array - a function 
- * @a: pointer.
- * @n: variable.
+ * reverse_array - a function that reverses an array.
+ * @a: an int pointer.
+ * @n: an ing variable.
  * Return: void.
  */
 void reverse_array(int *a, int n)
 {
-int c = 0;
-int b;
-
-while (c < (n / 2))
+int i = 0;
+int t;
+while (i < (n / 2))
 {
-t = a[c];
-a[c] = a[n - c - 1];
-a[n - c - 1] = bnew ;
-c++;
+t = a[i];
+a[i] = a[n - i - 1];
+a[n - i - 1] = t;
+i++;
 }
-
-
+}
