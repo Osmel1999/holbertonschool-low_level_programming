@@ -21,16 +21,16 @@ return (a);
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int s;
-  int a;
-	s = _strlen(src);
-	for (a = 0; a < n && a <= s; a++)
-  {
-  dest[a] = src[a];
-  }
-	for (; a < n; a++)
-  {
-  dest[a] = '\0';
-  }
-	return (dest);
+int s;
+int a;
+s = _strlen(src);
+for (a = 0; a < n && a <= s; a++)
+ {
+ dest[a] = src[a];
+ }
+for (; a < n; a++)
+ {
+ dest[a] = '\0';
+ }
+return (dest);
 }
