@@ -1,11 +1,10 @@
-i#include "holberton.h"
-
+#include "holberton.h"
 /**
- * _memset - Fills memory with a constant byte
- * @s: Array of char
- * @b: Constant character
+ * _memset - check the code for Holberton School students.
+ * @s: Array
+ * @b: contans
  * @n: Number of bytes
- * Return: Array filled with the constant
+ * Return: Array 
  **/
 char *_memset(char *s, char b, unsigned int n)
 {
