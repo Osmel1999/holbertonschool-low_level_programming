@@ -1,17 +1,18 @@
 #include "holberton.h"
 /**
- * print_chessboard - check the code for Holberton School students.
- * @matrix: pointer array
- **/
-void print_chessboard(char (*matrix)[8])
+ * print_chessboard - 
+ * @a: Bidimentional array
+ */
+void print_chessboard(char (*a)[8])
 {
-int i;
-int j;
-for (i = 0; i < 8; i++)
+int b;
+int c;
+
+for (b = 0; b < 8; b++)
 {
-for (j = 0; j < 8; j++)
+for (c = 0; c < 8; c++)
 {
-_putchar(*(*(matrix + i) + j));
+_putchar(a[b][c]);
 }
 _putchar('\n');
 }
