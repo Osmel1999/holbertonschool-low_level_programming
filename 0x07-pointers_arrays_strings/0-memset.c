@@ -4,7 +4,7 @@
  * @s: Array
  * @b: contans
  * @n: Number of bytes
- * Return: Array 
+ * Return: Array
  **/
 char *_memset(char *s, char b, unsigned int n)
 {
