@@ -1,30 +1,35 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
- * _strspn - check the code for Holberton School students.
- * @s:
- * @accept: 
- * Return: 
- * returns 
- **/
+ * *_strspn - gets the length of a prefix substring
+ * @s: string to evaluate
+ * @accept: string containing the list of characters to match in s
+ *
+ * Return: the number of bytes in the initial segment
+ * of s which consist only of bytes from accept
+ */
 unsigned int _strspn(char *s, char *accept)
 {
-int l;
 int a;
-int j;
-len = 0;
+int e;
+int u;
+int b;
+u = 0;
+
 for (a = 0; s[a] != '\0'; a++)
 {
-for (b = 0; accept[b] != '\0'; b++)
+b = 0;
+for (e = 0; accept[e] != '\0'; e++)
 {
-if (s[a] == accept[b])
+if (s[a] == accept[e])
 {
-l++;
-break;
+u++;
+b = 1;
 }
 }
-if (s[a] != accept[b])
-break;
+if (b == 0)
+{
+return (u);
 }
-return (l);
+}
+return (0);
 }
