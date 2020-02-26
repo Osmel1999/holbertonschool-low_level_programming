@@ -1,22 +1,23 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
  * _strpbrk - check the code for Holberton School students.
- * @s: pointer
- * @accept: pointer
- * Return: 
- **/
+ * @s: input
+ * @accept: input
+ * Return: Always 0 (Success)
+ */
 char *_strpbrk(char *s, char *accept)
 {
-int j;
-for (; *s != '\0'; s++)
+int a;
+int n;
+for(a = 0; s[a] != '\0'; a++)
 {
-for (j = 0; accept[j] != '\0'; j++)
+for (n = 0; accept[n] != '\0'; n++)
 {
-if (*s == accept[j])
+if (s[a] == accept[a])
 {
-return (s);
+return (s + a);
 }
 }
 }
-return (0);
 }
