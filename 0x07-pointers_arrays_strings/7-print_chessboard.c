@@ -1,22 +1,17 @@
-#include <stdio.h>
 #include "holberton.h"
-
+#include <stdio.h>
 /**
- * print_diagsums - check the code for Holberton School students.
- * @a: pointer
- * @size: variable
+ * print_chessboard - Print chess.
+ * @a: an array of pointers of char
  */
-void print_diagsums(int *a, int size)
+void print_chessboard(char (*a)[8])
 {
 int b;
-unsigned int suma;
-unsigned int suma2;
-suma = 0;
-sum2 = 0;
-for (b = 0; b < size; b++)
+int c;
+for (b = 0; b < 8; b++)
 {
-suma += a[(size * b) + b];
-suma2 += a[(size * (b + 1)) - (b + 1)];
+for (c = 0; c < 8; c++)
+_putchar(a[b][c]);
+_putchar('\n');
 }
-printf("%d, %d\n", suma, suma2);
 }
