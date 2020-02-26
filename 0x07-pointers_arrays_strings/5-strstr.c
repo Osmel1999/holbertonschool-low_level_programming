@@ -1,49 +1,24 @@
+#include <stdio.h>
 #include "holberton.h"
-#include <stdlib.h>
 /**
- * _strlen - check the code for Holberton School students.
- * @s: String
- * Return: Length
- **/
-int _strlen(char *s)
-{
-int i;
-for (i = 0; s[i] != '\0'; i++)
-{
-}
-return (i);
-}
-/**
- * _strstr - check the code for Holberton School students.
- * @haystack: String
- * @needle: Substring
- * Return: always 0
+ * _strstr - Entry point
+ * @haystack: input
+ * @needle: input
+ * Return: Always 0 (Success)
  */
 char *_strstr(char *haystack, char *needle)
 {
-int letter, needle_size, i;
-char *pos;
-letter = 0;
-needle_size = _strlen(needle);
-if (needle_size == 0)
+for (; *haystack != '\0'; haystack++)
+{
+char *one = haystack;
+char *two = needle;
+while (*one == *two && *two != '\0')
+{
+one++;
+two++;
+}
+if (*two == '\0')
 return (haystack);
-for (; *haystack != 0; haystack++)
-{
-if (*haystack == needle[0])
-{
-pos = haystack;
-for (i = 0; needle[i] != 0 && *haystack != 0; i++, haystack++)
-{
-if (*haystack != needle[i])
-{
-letter = 0;
-break;
 }
-letter++;
-}
-}
-}
-if (letter == needle_size)
-return (pos);
-return (0);
+return (NULL);
 }
