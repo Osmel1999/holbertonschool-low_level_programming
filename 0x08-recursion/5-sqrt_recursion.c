@@ -1,30 +1,33 @@
 #include "holberton.h"
-int 2_sqrt_recursion(int x, int y);
+
+int actual_sqrt_recursion(int n, int i);
 
 /**
- * _sqrt_recursion- check the code for Holberton School students.
- * @n: variable
- * Return: Always 0.
+ * _sqrt_recursion - returns the natural square root of a number
+ * @n: number to calculate the square root of
+ *
+ * Return: the resulting square root
  */
-
 int _sqrt_recursion(int n)
 {
-return (2_sqrt_recursion(n, 0.5));
+if (n < 0)
+return (-1);
+return (actual_sqrt_recursion(n, 0));
 }
 
 /**
- *  2_sqrt_recursion- check the code for Holberton School students.
- * @x: variable
- * @y: variable
- * Return: Always 0.
+ * actual_sqrt_recursion - recurses to find the natural
+ * square root of a number
+ * @n: number to calculate the sqaure root of
+ * @i: iterator
+ *
+ * Return: the resulting square root
  */
-
-int 2_sqrt_recursion(int x, int y)
+int actual_sqrt_recursion(int n, int i)
 {
-if (y * y == x)
-return (y);
-else if (y * y < x)
-return (2_sqrt_recursion(x, y + 1));
-else
+if (i * i > n)
 return (-1);
+if (i * i == n)
+return (i);
+return (actual_sqrt_recursion(n, i + 1));
 }
