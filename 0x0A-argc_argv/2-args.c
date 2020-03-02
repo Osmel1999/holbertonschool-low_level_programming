@@ -4,8 +4,8 @@
 /**
  * main - function
  * @argc: variable
- * @argv: array 
- * Return: Always 0 
+ * @argv: array
+ * Return: Always 0
  */
 int main(int argc, char *argv[])
 {
