@@ -49,7 +49,7 @@ int _atoi(char *s)
 /**
  * main - function
  * @argc: variable
- * @argv: array 
+ * @argv: array
  *
  * Return: 0 (Success), or 1 (Success)
  */
