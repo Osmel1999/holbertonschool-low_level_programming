@@ -9,16 +9,17 @@
 char *create_array(unsigned int size, char c)
 {
 char *a;
-unsigned int i;
-a = malloc(size * sizeof(c));
-while (i < size)
-{
+unsigned int i = 0;
+a =(char *) malloc(sizeof(char) * size);
 if (s == NULL)
 {
-return (NULL);
+return (0);
 }
-s[i] = c;
+while (i < size)
+{
+*(a + i) = c;
 i++
 }
+*(a + i)= '\0';
 return (s);
 }
