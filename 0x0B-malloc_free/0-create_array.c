@@ -1,10 +1,10 @@
 #include "stdlib.h"
 #include "holberton.h"
 
-char *create_array(int size, char c)
+char *create_array(unsigned int size, char c)
 {
 char *s;
-int i;
+unsigned int i;
 
 s= malloc(size * sizeof(c));
 if (size == NULL)
