@@ -13,11 +13,11 @@ char *s;
 unsigned int i;
 
 s = malloc(size * sizeof(c));
-if (size == NULL)
+if (size == 0)
 {
 return (NULL);
 }
-if (s == NULL)
+if (s == 0)
 {
 return (NULL);
 }
