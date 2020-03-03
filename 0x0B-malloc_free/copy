@@ -1,0 +1,22 @@
+#include  "stdlib.h"
+#include "holberton.h"
+
+/**
+ *  create_array- check the code for Holberton School students.
+ * @size: variable
+ * @c: variable
+ * Return: Always return a variable
+ */
+
+char *_strdup(int *str)
+{
+char *du;
+int c;
+for (c = 0; str[c] != '\0'; c++)
+{
+du[c] = str[c];
+}
+str = malloc(du * sizeof(str));
+for (c = 0; c < str[c]; c++)
+}
+

@@ -1,16 +1,33 @@
-#include  "stdlib.h"
+#include <stdlib.h>
 #include "holberton.h"
 
 /**
- *  create_array- check the code for Holberton School students.
- * @size: variable
- * @c: variable
- * Return: Always return a variable
+ * *_strdup - copies the string given as parameter
+ * @str: string to duplicate
+ *
+ * Return: pointer to the copied string (Success), NULL (Error)
  */
-
-char *_strdup(int *str)
+char *_strdup(char *str)
 {
-int c;
-str = malloc((len +1 ) * sizeof(str));
-for (c = 0; c < str[c]; c++)
+	char *du;
+	unsigned int i, size;
+
+	i = 0;
+	size = 0;
+
+	if (str == NULL)
+		return (NULL);
+
+	while (str[size])
+		size++;
+
+	du = malloc(sizeof(char) * (size + 1));
+
+	if (du == NULL)
+		return (NULL);
+
+	while ((du[i] = str[i]) != '\0')
+		i++;
+
+	return (du);
 }
