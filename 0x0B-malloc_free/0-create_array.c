@@ -1,25 +1,28 @@
-#include  "stdlib.h"
+#include <stdlib.h>
 #include "holberton.h"
+
 /**
- *  create_array- check the code for Holberton School students.
- * @size: variable
- * @c: variable
- * Return: Always return a variable
+ * *create_array - creates an array of chars,
+ * and initializes it with a specific char
+ * @size: size of the array to create
+ * @c: char to initialize the array c
+ *
+ * Return: pointer to the array (Success), NULL (Error)
  */
 char *create_array(unsigned int size, char c)
 {
 char *a;
 unsigned int i = 0;
-a =(char *) malloc(sizeof(char) * size);
-if (s == NULL)
-{
+if (size == 0)
+return (NULL);
+a = (char *) malloc(sizeof(char) * size);
+if (p == NULL)
 return (0);
-}
 while (i < size)
 {
 *(a + i) = c;
-i++
+i++;
 }
-*(a + i)= '\0';
-return (s);
+*(a + i) = '\0';
+return (a);
 }
