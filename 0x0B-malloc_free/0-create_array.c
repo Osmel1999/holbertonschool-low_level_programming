@@ -15,7 +15,7 @@ unsigned int i;
 
 a = malloc(size * sizeof(c));
 
-while (i < len)
+while (i < size)
 {
 if (s == NULL)
 {
