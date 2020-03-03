@@ -25,7 +25,7 @@ i = 0;
 while (i < size)
 {
 s[i] = c;
-i++
+i++;
 }
 s[i] = '\0';
 return (s);
