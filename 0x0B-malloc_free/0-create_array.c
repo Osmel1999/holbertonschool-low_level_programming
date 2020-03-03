@@ -2,9 +2,10 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ *  create_array- check the code for Holberton School students.
+ * @size: variable
+ * @c: variable
+ * Return: Always return a variable
  */
 
 char *create_array(unsigned int size, char c)
