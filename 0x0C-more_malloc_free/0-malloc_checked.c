@@ -1,11 +1,12 @@
-#include "holberton.h"
 #include <stdlib.h>
+#include "holberton.h"
 
 /**
- * malloc_checked - check the code for Holberton School students.
- * @b: variable
- * Return: Always 0.
- **/
+ * *malloc_checked - allocates memory using malloc
+ * @b: number of bytes to allocate
+ *
+ * Return: a pointer to the allocated memory
+ */
 void *malloc_checked(unsigned int b)
 {
 	void *ptr;
