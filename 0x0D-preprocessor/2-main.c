@@ -1,6 +1,5 @@
-#include "1-pi.h"
 #include <stdio.h>
-
+#include "1-pi.h"
 /**
  * main - check the code for Holberton School students.
  *
@@ -8,6 +7,6 @@
  */
 int main(void)
 {
-printf("s%\n", __LINE__);
-return (0);
+printf("%s\n",__FILE__);
+return(0);
 }
