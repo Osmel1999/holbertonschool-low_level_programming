@@ -6,7 +6,6 @@
  */
 int main(void)
 {
-printf("0%d", __LINE__);
-printf("\n");
+printf("s%\n", __LINE__);
 return (0);
 }
