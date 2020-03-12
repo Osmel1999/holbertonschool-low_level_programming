@@ -2,7 +2,7 @@
 #include "function_pointers.h"
 
 /**
- * array_iterator - executes a function given as a parameter
+ * array_iterator - check the code for Holberton School students.
  * @array: pointer
  * @size: variable
  * @action: pointerto function
