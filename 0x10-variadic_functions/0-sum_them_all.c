@@ -1,22 +1,27 @@
-# include  " variadic_functions.h "
+#include "variadic_functions.h"
+
 
 /**
- * main - check the code for Holberton School students.
+ * sum_them_all - check the code for Holberton School students.
  * @n: constans
  * Return: Always 0.
- */
-int  sum_them_all ( const  unsigned  int n, ...)
+ **/
+int sum_them_all(const unsigned int n, ...)
 {
-	unsigned  int i;
-	int suma = 0 ;
-	lista va_list ;
+	int i, sum;
+	va_list nums;
 
-	va_start (lista, n);
+	va_start(nums, n);
 
-	para (i = 0 ; i <n; i ++)
-		sum + = va_arg (lista, int );
+	sum = 0;
+	if (n <= 0)
+		return (sum);
 
-	va_end (lista);
+	for (i = 0; i < (int) n; i++)
+	{
+		sum += va_arg(nums, int);
+	}
 
-	retorno (suma);
+	va_end(nums);
+	return (sum);
 }
